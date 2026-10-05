@@ -1,0 +1,18 @@
+{
+  "services": [
+    { "id": "svc_namenode", "name": "hdfs-namenode", "status": "down", "component": "hdfs_namenode" },
+    { "id": "svc_datanode", "name": "hdfs-datanode", "status": "degraded", "component": "hdfs_datanode" },
+    { "id": "svc_scheduler", "name": "batch-scheduler", "status": "healthy", "component": "scheduler" },
+    { "id": "svc_memory", "name": "compute-memory", "status": "degraded", "component": "memory" }
+  ],
+  "deploys": [
+    { "id": "dep_1001", "service": "hdfs-namenode", "version": "synthetic-1.4.2", "at": "2026-09-28T10:00:00Z", "status": "rolled_back" },
+    { "id": "dep_1002", "service": "batch-scheduler", "version": "synthetic-3.0.1", "at": "2026-09-29T08:15:00Z", "status": "succeeded" }
+  ],
+  "logs": [
+    { "component": "memory", "line": "RAS KERNEL FATAL memory parity error corrected count exceeded" },
+    { "component": "hdfs_datanode", "line": "DataNode heartbeat expired for rack R02 block blk_1001" },
+    { "component": "network", "line": "link flap detected on port 4" },
+    { "component": "scheduler", "line": "queue depth informational heartbeat" }
+  ]
+}
