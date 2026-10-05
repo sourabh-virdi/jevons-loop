@@ -7,7 +7,6 @@ A configurable agent runtime that splits work between Jev (fast typed decisions)
 
 The same inputs can run in `baseline` (LLM at every checkpoint), `hybrid` (Jev, then LLM when confidence is low), or `jev-only` (no fallback).
 
-Guides, diagrams, and a blog post are in [docs/README.md](docs/README.md).
 
 ## Architecture
 
