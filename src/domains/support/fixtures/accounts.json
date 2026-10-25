@@ -1,0 +1,25 @@
+{
+  "customers": [
+    {
+      "id": "cust_fixture_001",
+      "displayName": "Synthetic Fixture001",
+      "cardLast4": "4242",
+      "cardStatus": "active",
+      "topUp": { "status": "pending", "amount": 50, "currency": "GBP" },
+      "transactions": [
+        { "id": "txn_001", "description": "Synthetic Grocer", "amount": -12.4, "currency": "GBP", "status": "posted" },
+        { "id": "txn_002", "description": "Synthetic Transit", "amount": -2.8, "currency": "GBP", "status": "pending" }
+      ]
+    },
+    {
+      "id": "cust_fixture_002",
+      "displayName": "Synthetic Fixture002",
+      "cardLast4": "1111",
+      "cardStatus": "frozen",
+      "topUp": { "status": "failed", "amount": 20, "currency": "EUR" },
+      "transactions": [
+        { "id": "txn_003", "description": "Synthetic Cafe", "amount": -4.5, "currency": "EUR", "status": "posted" }
+      ]
+    }
+  ]
+}
